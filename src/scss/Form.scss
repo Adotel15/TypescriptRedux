@@ -1,0 +1,35 @@
+
+.form_general {
+    margin: 1rem 20rem;
+    width: 50%;
+}
+
+.form_editar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form_editar input:not(:last-of-type), textarea{
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border: 0.2px solid black;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.input_editar {
+    padding: 0.8rem 1rem;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 91, 82);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.input_editar:hover {
+    background: white;
+    border: red 1px solid;
+    color: red;
+}

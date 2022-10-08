@@ -1,0 +1,74 @@
+
+.header {
+    background-color: rgb(255, 91, 82);
+    margin: 0 auto;
+    padding: 0 8rem;
+    height: 11vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 3rem;
+    font-weight: 200;
+    font-size: 2.3rem;
+    
+}
+
+.logo a {
+    color: white;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-around;
+
+    gap: 1rem;
+}
+
+.input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+
+.input:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.boton {
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.boton:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+}
+
+.logout a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 10px;
+    transition: 0.6s ease;
+}
+
+.logout a:hover {
+    background: white;
+    color: red;
+}

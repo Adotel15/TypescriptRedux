@@ -1,0 +1,45 @@
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+
+    border-radius: 20px;
+    padding: 2rem;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: ease 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    opacity: 1;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card span{
+    color: red;
+}
+
+.card div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+
+.editar {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0.5rem 1.2rem;
+    transition: 0.5s ease;
+    color: black;
+}
+
+.editar:hover {
+    background-color: rgb(255, 58, 58);
+    color: white;
+    border: white;
+}
+

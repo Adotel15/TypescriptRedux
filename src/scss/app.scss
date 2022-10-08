@@ -1,0 +1,28 @@
+
+.app {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.page {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    height: 89vh;
+    width: 60%;
+    background: rgb(255, 232, 232);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contenido {
+    height: 89vh;
+    overflow-y: scroll;
+    padding: 0 10rem;
+}
+
+.contenido p:first-child {
+    padding: 0 1rem;
+}
