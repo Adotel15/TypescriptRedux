@@ -16,13 +16,14 @@ function App() {
       <BrowserRouter>
         <Routes>
 
+          <Route path = "/login" element = { <Login /> } />
+          
           <Route path = "/" element = { <Layout /> } >
             <Route index element = { <Inicio /> } />
             <Route path = "editar/:id" element = { <Form /> } />
             <Route path = "usuario/:id" element = { <Usuario /> } />
           </Route>
 
-          <Route path = "/login" element = { <Login /> } />
           
         </Routes>
       </BrowserRouter>

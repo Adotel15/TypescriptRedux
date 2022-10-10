@@ -49,7 +49,7 @@ const Header = () => {
              </form>
 
              <div className = "logout">
-                <a href = "/login">Cerrar Sesión</a>
+                <Link to = "/login">Cerrar Sesión</Link>
             </div>
 
         </div>
