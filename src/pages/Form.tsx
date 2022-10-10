@@ -26,7 +26,7 @@ const Form = () => {
     
     useEffect(() => {
         setPostEditar(posts[Number(id) - 1])
-    })
+    },[id])
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 

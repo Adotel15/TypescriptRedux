@@ -32,7 +32,7 @@ const Usuario = () => {
         })
 
         setUsuarioPost(postUsuario)
-    })
+    }, [id])
 
     const handleEliminarPost = (id:number):void => {
 
