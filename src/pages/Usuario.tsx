@@ -27,12 +27,9 @@ const Usuario = () => {
     ])
 
     useEffect(() => {
-        const postUsuario = posts.filter( item => {
-            if (item.userId === Number(id)) return item
-        })
-
+        const postUsuario = posts.filter( item => item.userId === Number(id) )
         setUsuarioPost(postUsuario)
-    }, [id])
+    }, [id, posts])
 
     const handleEliminarPost = (id:number):void => {
 
