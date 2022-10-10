@@ -1,4 +1,6 @@
 
+@import './app.scss';
+
 .login {
     height: 100vh;
     display: flex;
@@ -7,7 +9,7 @@
     width: 100%;
     gap: 4rem;
 
-    background-color: whitesmoke;
+    background-color: $color_background;
 }
 
 .login_form {
@@ -19,7 +21,7 @@
 
 .input_login {
     padding: 0.3rem 1rem;
-    border: 0.2px solid rgb(255, 172, 172);
+    border: 0.2px solid $color_primary;
     border-radius: 10px;
     height: 30px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
@@ -31,21 +33,20 @@
 
 .boton_login {
     padding: 0.5rem;
-    border-radius: 10px;
     border: none;
-    background: rgb(190, 58, 58);
+    background: $color_primary;
     color: white;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
     transition: 0.6s;
-    cursor: pointer;
+    @include estilos_boton;
 }
 
 .boton_login:hover {
     background: white;
-    color: rgb(190, 58, 58);
+    color: $color_primary;
 }
 
 .titulo_login {
-    color: rgb(173, 15, 15);
+    color: $color_primary;
     font-size: xx-large;
 }

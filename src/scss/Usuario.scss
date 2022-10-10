@@ -1,0 +1,17 @@
+
+@import './app.scss';
+
+.usuario_general {
+    padding: 0rem 20rem;
+    height: 89vh;
+    overflow-y: scroll;
+}
+
+.usuario_tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    background-color: $color_background;
+}

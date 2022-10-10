@@ -1,6 +1,6 @@
 
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import "../scss/Header.scss"
 
 
@@ -15,7 +15,7 @@ const Header = () => {
         event.preventDefault()
 
         if (usuario === 0 || usuario > 10){
-            console.log("No existe usuario")
+            alert("Usuario no existente")
             return
         }
 
@@ -27,7 +27,7 @@ const Header = () => {
     return (
         <div className = "header flex">
 
-            <h1 className= "logo"><a href = "/">Cleverpy</a></h1>
+            <h1 className= "logo"><Link to = "/">Cleverpy</Link></h1>
 
             <form
                 className = "formulario"

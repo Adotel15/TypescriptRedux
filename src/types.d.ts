@@ -1,11 +1,14 @@
 
-export interface Data {
+export interface Post {
     userId: number, 
     id: number, 
     title: string, 
     body: string
 }
 
-export interface Posts {
-    posts: Data[]
+export type PostAction = {
+    type: string,
+    post: Data
 }
+
+export type DispatchType = (args: PostAction) => PostAction

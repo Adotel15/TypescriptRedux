@@ -1,13 +1,14 @@
 
 import { Link } from 'react-router-dom'
-import { Data } from '../types'
+import { Post } from '../types'
 import '../scss/Card.scss'
 
 interface Props {
-    carta : Data
+    carta : Post,
+    handleEliminarPost: (id:number) => void
 }
 
-const Card = ({carta}: Props ) => {
+const Card = ( {carta, handleEliminarPost}: Props ) => {
 
     return (
             <div className = "card">
@@ -19,6 +20,12 @@ const Card = ({carta}: Props ) => {
                 <div>
                     <h3> {`Usuario: ${carta.userId}`} </h3>
                     <Link className = "editar" to = {`/editar/${carta.id}`} >Editar</Link>
+                    <button 
+                        className = 'editar'
+                        onClick = {() => handleEliminarPost(carta.id)}
+                    >
+                        Eliminar
+                    </button>
                 </div>
             </div>
     )

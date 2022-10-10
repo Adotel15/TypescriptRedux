@@ -1,6 +1,8 @@
 
+@import './app.scss';
+
 .header {
-    background-color: rgb(255, 91, 82);
+    background-color: $color_primary;
     margin: 0 auto;
     padding: 0 8rem;
     height: 11vh;
@@ -16,8 +18,7 @@
 .logo {
     margin-left: 3rem;
     font-weight: 200;
-    font-size: 2.3rem;
-    
+    font-size: 2.3rem;   
 }
 
 .logo a {
@@ -44,12 +45,12 @@
 
 .boton {
   background: black;
-  border-radius: 5px;
   text-decoration: none;
   color: white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
-  cursor: pointer;
+  @include estilos_boton;
+
 }
 
 .boton:hover {
