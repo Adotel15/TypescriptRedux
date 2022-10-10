@@ -17,7 +17,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         if (posts.length === 0) leerAPI(dispatch)
-    }, [])
+    })
 
     const handleEliminarPost = (id:number):void => {
 
