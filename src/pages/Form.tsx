@@ -25,7 +25,8 @@ const Form = () => {
     const navigate = useNavigate()
     
     useEffect(() => {
-        setPostEditar(posts[Number(id) - 1])
+        const indexPost = posts.findIndex(item => item.id === Number(id))
+        setPostEditar(posts[indexPost])
     },[id, posts])
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {

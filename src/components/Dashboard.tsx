@@ -39,6 +39,8 @@ const Dashboard = () => {
                     />
                 ))}
             </section>
+
+            <p className = "footer">©Copyright Adrian Dotel Pujols 2022</p>
         </div>
     )
 }
